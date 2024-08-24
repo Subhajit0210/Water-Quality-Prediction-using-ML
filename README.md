@@ -45,6 +45,30 @@ The project is structured as follows:
 - **scripts/**: Python scripts for data preprocessing and model training.
 - **README.md**: Project documentation.
 
+## Classification Techniques
+The following machine learning algorithms were used in this project:
+
+1. Gaussian Naive Bayes
+Gaussian Naive Bayes is a probabilistic classifier based on Bayes' theorem, assuming that features follow a Gaussian distribution. This algorithm is particularly useful for classification problems with continuous input variables. It is simple, easy to implement, and works well with a small dataset. In this project, Gaussian Naive Bayes helps in understanding the probabilistic distribution of water quality features.
+
+2. Decision Tree Classifier
+The Decision Tree Classifier is a non-parametric supervised learning method used for classification. It works by splitting the data into subsets based on the value of input features. This model is easy to interpret and visualize, making it valuable for understanding feature importance in the dataset. Decision trees are prone to overfitting, but they provide a good baseline and insight into which features are most impactful.
+
+3. Random Forest Classifier
+Random Forest is an ensemble learning method that combines multiple decision trees to improve predictive accuracy and control overfitting. By averaging the results of several trees, Random Forest mitigates the risk of overfitting that comes with individual decision trees. It is robust and handles both numerical and categorical data well. In this project, Random Forest is used for its superior performance in dealing with high-dimensional data and its ability to provide feature importance.
+
+4. Logistic Regression
+Logistic Regression is a linear model commonly used for binary classification problems. It estimates the probability of a binary response based on one or more predictor variables. Despite its simplicity, logistic regression can be surprisingly effective for linearly separable data and is often used as a baseline model in classification tasks. It provides coefficients for each feature, offering insights into their influence on the potability of water.
+
+Modeling and Evaluation
+Each algorithm was trained and evaluated using a consistent set of metrics to ensure comparability:
+
+Accuracy: The proportion of true results among the total number of cases examined.
+Precision, Recall, and F1-score: Metrics that provide insights into the performance of the classification model, especially in cases of imbalanced classes.
+Confusion Matrix: A table used to describe the performance of a classification model by comparing predicted and actual labels.
+Results
+The results section in the notebook details the performance of each model. Generally, the Random Forest Classifier provided the highest accuracy and robustness across various metrics, suggesting it as the most effective model for this task. Comprehensive evaluation and insights are provided in the notebook.
+
 ## Installation
 
 To replicate the analysis and modeling environment, you need Python 3.x and the following dependencies:
