@@ -7,13 +7,15 @@ A machine learning project designed to predict water potability based on various
 - [Introduction](#introduction)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
+- [Dependencies](#dependencies)
+- [Data Collection](#data-collection)
+- [Data Preparation](#data-preparation)
+- [Data Visualization](#data-visualization)
 - [Classification Techniques](#classification-techniques)
 - [Modeling and Evaluation](#modeling-and-evaluation)
 - [Results and Insights](results-and-insights)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -45,6 +47,15 @@ The project is structured as follows:
 - **scripts/**: Python scripts for data preprocessing and model training.
 - **README.md**: Project documentation.
 
+## Dependencies
+The project requires the following Python libraries:
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- scipy
+- scikit-learn
+
 ## Classification Techniques
 The following machine learning classification algorithms were used in this project:
 - **Gaussian Naive Bayes**:
@@ -73,9 +84,20 @@ Each algorithm was trained and evaluated using a consistent set of metrics to en
 ## Results and Insights
 The results section in the notebook details the performance of each model. Generally, the Random Forest Classifier provided the highest accuracy and robustness across various metrics, suggesting it as the most effective model for this task. Comprehensive evaluation and insights are provided in the notebook.
 
-## Installation
-
-To replicate the analysis and modeling environment, you need Python 3.x and the following dependencies:
-
+## Usage
+To run the project, follow these steps:
+1. Clone the repository:
 ```bash
-pip install pandas matplotlib seaborn scipy scikit-learn jupyter joblib
+git clone https://github.com/yourusername/water-quality-prediction.git
+```
+2. Navigate to the project directory:
+```bash
+cd water-quality-prediction
+```
+4. Run the Jupyter notebook:
+```bash
+jupyter notebook Water-Quality-Prediction.ipynb
+```
+
+## Contributing
+Contributions are welcome! Please create a new branch for any changes and submit a pull request for review.
