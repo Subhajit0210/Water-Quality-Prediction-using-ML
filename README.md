@@ -5,7 +5,6 @@ A machine learning project designed to predict water potability based on various
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Dataset](#dataset)
 - [Dependencies](#dependencies)
 - [Data Collection](#data-collection)
 - [Data Preparation](#data-preparation)
@@ -20,8 +19,16 @@ A machine learning project designed to predict water potability based on various
 
 Ensuring water quality is critical for public health and safety. This project aims to classify water samples as potable or non-potable using a dataset comprising various indicators of water quality. By applying multiple machine learning algorithms, this project seeks to accurately predict water potability and understand the factors that most significantly affect water quality.
 
-## Dataset
+## Dependencies
+The project requires the following Python libraries:
+- numpy
+- pandas
+- matplotlib
+- seaborn
+- scipy
+- scikit-learn
 
+## Data Collection
 The dataset utilized in this project is `water_potability.csv`, which includes the following features:
 
 - **pH**: A measure of how acidic/basic water is.
@@ -34,15 +41,6 @@ The dataset utilized in this project is `water_potability.csv`, which includes t
 - **Trihalomethanes**: Concentration of trihalomethanes in μg/L.
 - **Turbidity**: The cloudiness or haziness of the water.
 - **Potability**: A binary variable indicating whether the water is safe to drink (1) or not (0).
-
-## Dependencies
-The project requires the following Python libraries:
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- scipy
-- scikit-learn
 
 ## Classification Techniques
 The following machine learning classification algorithms were used in this project:
