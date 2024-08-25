@@ -60,6 +60,39 @@ The data preparation steps included:
 - **Data Splitting**: The dataset was split into training and testing sets to evaluate model performance on unseen data.
 - **Data Visualization**: Created a heatmap to visualize the correlation matrix, helping identify the strength of relationships between variables.
 
+## Data Visualization
+
+To gain insights into the water quality data, several visualizations were created using various types of charts:
+
+1. **Distribution of pH Levels**:
+   - **Histogram**: Used to visualize the distribution and skewness of pH levels in the water samples. This helps identify the range of acidity and alkalinity present in the dataset.
+
+2. **Distribution of Hardness**:
+   - **Histogram**: Created to observe the variation in water hardness across different samples, which is essential for understanding the concentration of calcium and magnesium.
+
+3. **Distribution of Solids**:
+   - **Histogram**: Plotted to analyze the range and distribution of total dissolved solids, offering insights into water quality and its impact on potability.
+
+4. **Distribution of Chloramines**:
+   - **Histogram**: Displayed to understand the levels of chloramines used as disinfectants in the water samples, a key factor in determining water safety.
+
+5. **Correlation Heatmap**:
+   - **Heatmap**: Created to visualize the correlation between different water quality features, helping identify which features are closely related and highlighting potential multicollinearity that could affect model performance.
+
+6. **Scatter Plots**:
+   - **Scatter Plot**: Used to examine the relationship between pairs of features, providing a visual representation of how two variables correlate with each other.
+
+7. **Pair Plot**:
+   - **Pair Plot**: Generated to visualize the distribution of individual features and relationships between multiple pairs of features in a single figure, helping to identify patterns and potential correlations.
+
+8. **Linear Regression Plot (lmplot)**:
+   - **Lmplot**: Used to display linear relationships between features, incorporating a regression line to show the trend, which helps in understanding linear dependencies in the dataset.
+
+9. **Box Plot**:
+   - **Box Plot**: Created to visualize the spread and presence of outliers in each feature. This is useful for understanding the variability within the data and identifying potential outliers that might need handling before model training.
+
+These visualizations were essential in understanding the dataset's characteristics, guiding the feature selection process, and preparing the data for modeling.
+
 ## Classification Techniques
 The following machine learning classification algorithms were used in this project:
 - **Gaussian Naive Bayes**:
