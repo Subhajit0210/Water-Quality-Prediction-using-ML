@@ -49,6 +49,17 @@ The dataset utilized in this project is `water_potability.csv`, which includes t
 - **Turbidity**: The cloudiness or haziness of the water.
 - **Potability**: A binary variable indicating whether the water is safe to drink (1) or not (0).
 
+## Data Preparation
+
+The data preparation steps included:
+
+- **Loading the data**: The dataset was loaded into a Pandas DataFrame for manipulation and analysis.
+- **Exploratory Data Analysis (EDA)**: Conducted to understand the distribution and relationships between different water quality features.
+- **Handling Missing Values**: Checked for missing values in the dataset and imputed missing entries for `ph`, `Sulfate`, and `Trihalomethanes` with their respective mean values to ensure data completeness.
+- **Feature Scaling**: Applied standardization using `StandardScaler` to normalize the features, which is crucial for algorithms sensitive to feature magnitudes.
+- **Data Splitting**: The dataset was split into training and testing sets to evaluate model performance on unseen data.
+- **Data Visualization**: Created a heatmap to visualize the correlation matrix, helping identify the strength of relationships between variables.
+
 ## Classification Techniques
 The following machine learning classification algorithms were used in this project:
 - **Gaussian Naive Bayes**:
@@ -87,7 +98,7 @@ git clone https://github.com/yourusername/water-quality-prediction.git
 ```bash
 cd water-quality-prediction
 ```
-4. Run the Jupyter notebook:
+3. Run the Jupyter notebook:
 ```bash
 jupyter notebook Water-Quality-Prediction.ipynb
 ```
