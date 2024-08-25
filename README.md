@@ -5,6 +5,7 @@ A machine learning project designed to predict water potability based on various
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Key Objectives](#key-objectives)
 - [Dependencies](#dependencies)
 - [Data Collection](#data-collection)
 - [Data Preparation](#data-preparation)
@@ -18,6 +19,12 @@ A machine learning project designed to predict water potability based on various
 ## Project Overview
 
 Ensuring water quality is critical for public health and safety. This project aims to classify water samples as potable or non-potable using a dataset comprising various indicators of water quality. By applying multiple machine learning algorithms, this project seeks to accurately predict water potability and understand the factors that most significantly affect water quality.
+
+## Key Objectives
+
+- **Predict Potability**: Use machine learning models to classify water samples as potable (safe to drink) or non-potable based on a set of features such as pH, hardness, solids, chloramines, and more.
+- **Feature Analysis**: Understand the influence of different water quality parameters on potability, offering insights into which features are most indicative of water quality.
+- **Model Evaluation**: Implement and compare multiple machine learning algorithms to determine the most effective model for predicting water quality, ensuring robustness and accuracy.
 
 ## Dependencies
 The project requires the following Python libraries:
